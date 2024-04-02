@@ -1,0 +1,15 @@
+ipython>=7.20.0,<8
+notebook==6.4.6
+jupyter-client==7.1.2
+Cython==0.29.21
+numpy==1.22.2
+scipy==1.8.0
+matplotlib==3.5.1
+seaborn==0.11.1
+pandas==1.4.1
+scikit-learn==1.0.2
+green==3.4.1
+black
+torch==1.10.2
+pytorch-lightning
+graphviz==0.16
