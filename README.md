@@ -6,7 +6,7 @@
 - [Task](#task)
 - [MLOps](#mlops)
 - [Containerized Deployment](#containerized-deployment)
-- [Images](#images)
+- [LocalHost Server](#localhost-server)
 - [See More](#see-more)
 
 ## Fictional Background
