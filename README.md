@@ -45,7 +45,7 @@ docker run -d -p 8080:80 weezygeezer/reviews-api:latest
 3. Visit the LocalHost server.
 (http://localhost:8000/docs)
 
-## Images
+## LocalHost Server
 The FastAPI documentation sends a JSON request to the model. Below is an example of how the API will look on your machine:
 
 <img width="1376" alt="SA-rev" src="https://github.com/uazhlt-ms-program/grad-level-term-project-kaggle-competition-weezymatt/assets/85853890/15189fe7-01c7-419b-bab5-499f31f65e23">
