@@ -1,24 +1,17 @@
-FROM pytorch/pytorch:1.9.1-cuda11.1-cudnn8-runtime
+FROM python:3.11.5
 
-LABEL author="Gus Hahn-Powell"
-LABEL description="Default container definition for class competition."
 
-# Create app directory
-WORKDIR /app
+WORKDIR /main
 
-RUN pip install -U pytorch-lightning \
-    graphviz==0.16 \
-    "ipython>=7.20.0,<8" \
-    notebook==6.4.6 \
-    jupyter-client==7.1.2 \
-    jupyter-contrib-nbextensions==0.5.1 \
-    && jupyter contrib nbextension install --user
 
-# copy executables to path
-COPY . ./
-RUN chmod u+x  scripts/* \
-    && mv scripts/* /usr/local/bin/ \
-    && rmdir scripts
+COPY ./requirements.txt /main/requirements.txt
 
-# launch jupyter by default
-CMD ["/bin/bash", "launch-notebook"]
+
+RUN pip install --no-cache-dir --upgrade -r /main/requirements.txt
+
+COPY ./initialize.py /main/initialize.py
+RUN python3 /main/initialize.py
+
+COPY . .
+
+CMD ["uvicorn", "mlapi:app", "--host", "0.0.0.0", "--port", "80"]
