@@ -11,6 +11,7 @@
 - [See More](#see-more)
 
 ## Reproducibility
+> You may choose to reproduce the results, however, you may also pull the Docker image!
 - The requirements.txt contains the required libraries + more
 - Git clone my repository and run all the cells in the ipynb file - '/workspace/workspace.ipynb'
 
