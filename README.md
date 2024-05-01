@@ -2,12 +2,17 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ml3o3YLw)
 
 ## Table of Contents
+- [Reproducibility](reproducibility)
 - [Fiction Background](#fictional-background)
 - [Task](#task)
 - [MLOps](#mlops)
 - [Containerized Deployment](#containerized-deployment)
 - [LocalHost Server](#localhost-server)
 - [See More](#see-more)
+
+## Reproducibility
+- The requirements.txt contains the required libraries + more
+- Git clone my repository and run all the cells in the ipynb file - '/workspace/workspace.ipynb'
 
 ## Fictional Background
 Marvin works at the last Blockbusta Videoz (a fictional video rental shop) where his task is to classify movie and TV show reviews to help curate a special section of the store.
